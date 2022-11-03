@@ -19,4 +19,4 @@ Route::get('/', function () {
 
 Route::get('/home', [\App\Http\Controllers\DonasiController::class, 'index']);
 Route::post('/donasi', [\App\Http\Controllers\DonasiController::class, 'donasi']);
-Route::get('/callback', [\App\Http\Controllers\DonasiController::class, 'callback']);
+Route::post('/callback', [\App\Http\Controllers\DonasiController::class, 'callback']);
