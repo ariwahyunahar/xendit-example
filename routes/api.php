@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/callback', [\App\Http\Controllers\DonasiController::class, 'callback']);
+Route::get('/callback', [\App\Http\Controllers\DonasiController::class, 'callback']);
