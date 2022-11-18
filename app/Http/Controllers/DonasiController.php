@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Response;
 use Xendit\Xendit;
 
 class DonasiController extends Controller
@@ -30,7 +31,7 @@ class DonasiController extends Controller
         $time = time();
         $trx_date = date('YmdHis'); // Action/Transaction initiated time;Format  YYYYMMDDHHMMSS (Example: 20190114170628)
         $partnerTrxID = '20746_'.uniqid(); // NIM + uniqid
-        $callback_succes = "https://xendit.sipgaji.com/api/callback";
+        $callback_succes = "https://kafegamaa.com/api/callback";
         $merchant_id = "kafegama_app"; // ID Merchant Kafegama
         $terminalID = "kafegama"; // Misal: App Kafegama, yg lain
         $terminalName = "Kafegama"; // Misal: App Kafegama, yg lain
@@ -122,7 +123,7 @@ class DonasiController extends Controller
         $time = time();
         $trx_date = date('YmdHis'); // Action/Transaction initiated time;Format  YYYYMMDDHHMMSS (Example: 20190114170628)
         $partnerTrxID = '20746_'.uniqid(); // NIM + uniqid
-        $callback_succes = "https://xendit.sipgaji.com/api/callback";
+        $callback_succes = "https://kafegamaa.com/api/callback";
         $merchant_id = "kafegama_app"; // ID Merchant Kafegama
         $terminalID = "kafegama"; // Misal: App Kafegama, yg lain
         $terminalName = "Kafegama"; // Misal: App Kafegama, yg lain
